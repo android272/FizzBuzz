@@ -28,4 +28,10 @@ public class FizzBuzzTest {
         assertEquals("buzz", fizzbuzz.fizz(5));
         assertEquals("buzz", fizzbuzz.fizz(10));
     }
+
+    @Test
+    public void When_FizzBuzz_Is_Passed_A_Number_That_Is_A_Multiple_Of_3_And_5_It_Returns_Buzz() {
+        assertEquals("fizzbuzz", fizzbuzz.fizz(15));
+        assertEquals("fizzbuzz", fizzbuzz.fizz(30));
+    }
 }
